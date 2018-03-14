@@ -14,7 +14,7 @@ module.exports = function (app) {
 
   app.get("/scrape", function (req, res) {
     //use request dependecy to grab the body of the html
-    request("https://petapixel.com/", function (error, response, html) {
+    request("u/", function (error, response, html) {
       //Save the body of the html into a variabl called $  within cheerio
       var $ = cheerio.load(html);
       // Now grab every a tag link within an article heading  and iterate through it
