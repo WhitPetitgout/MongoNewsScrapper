@@ -40,7 +40,7 @@ db.once("open", function () {
 // Require the routes in our controllers js file
 require("./controllers/articlesController.js")(app);
 
-//Listen on PORT 8000 & notify us.
+//Listen on PORT 3000 & notify us.
 app.listen(PORT, function () {
   console.log("App running on port 3000");
 });
